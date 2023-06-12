@@ -19,7 +19,7 @@ const locationText = document.getElementById("location");
 
 //Opening animation and game setup
 document.addEventListener("DOMContentLoaded", () => {
-    titleDiv.style.marginTop = "5%";
+    titleDiv.style.marginTop = "3%";
     title1.style.fontSize = "50px";
     title2.style.fontSize = "14px";
     setTimeout(() => {welcome()}, 2000);
@@ -33,6 +33,8 @@ function welcome(){
 function start(){
     instructions.style.display = "flex";
     setTimeout(() => {changeColour.style.display = "flex"}, 5000);
+    let width = window.innerWidth;
+    (width <= "768")?prompt():console.log("Not a mobile device");
 }
 
 document.addEventListener('keydown', (event) => {
@@ -93,3 +95,5 @@ monoChrome.addEventListener("click", () => {
     setColour("--darkGold", "#FFA590");
     setColour("--black", "#867774");
  });
+
+//  > When viewing on a phone an input box is shown and used so a user can get the key code information on mobile and desktop machines

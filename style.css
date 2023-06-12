@@ -13,6 +13,24 @@ body{
     text-align: center;
     font-family: 'Source Code Pro', monospace;
 }
+/*------BANNER-------*/
+.banner{
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    height: 25px;
+    position: absolute;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.banner p{
+    text-align: center;
+    text-justify: center;
+    font-size: 14px;
+    justify-self: center;
+}
 /*------TITLE-------*/
 .titleDiv{
     font-family: 'Luckiest Guy', cursive;  
@@ -54,7 +72,7 @@ body{
 .colours{
     display: none;
     justify-content: space-evenly;
-    margin-top: 3%;
+    margin-top: 60px;
 }
 .blue{
     height: 40px;
@@ -165,4 +183,19 @@ footer{
 }
 footer a:hover{
     color: var(--black);
+}
+/*------MOBILE COMPATABILITY-------*/
+.textInput{
+    display: none;
+}
+/*------MEDIA QUERIES-------*/
+@media  screen and (max-width: 768px) {
+    .textInput{
+        display: flex;
+        justify-content: center;
+        width: 60vw; 
+    }
+    .banner{
+        display: none;
+    }
 }
