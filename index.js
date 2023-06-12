@@ -35,7 +35,7 @@ function start(){
     setTimeout(() => {changeColour.style.display = "flex"}, 5000);
 }
 
-document.addEventListener('KeyboardEvent', (event) => {
+document.addEventListener('keypress', (event) => {
     welcomeSection.style.display = "none";
     keyDiv.style.display = "flex";
     var name = event.key;
