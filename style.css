@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Righteous&family=Source+Code+Pro:wght@300&display=swap');
+:root{
+    --blue: #1E4E8C;
+    --grey: #D6D7DC;
+    --gold: #E4D094;
+    --darkGold: #9B7E56;
+    --black: #0A0A0C;
+}
+
+body{
+    background-color: var(--blue);
+    color: var(--grey);
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+/*------TITLE-------*/
+.titleDiv{
+    font-family: 'Luckiest Guy', cursive;  
+    margin-top: 40%;
+    transition: margin-top 3s;
+}
+.title1{
+    color: var(--gold);
+    text-shadow: var(--darkGold);
+    font-size: 42px;
+    transition: font-size 3s;
+}
+.title2{
+    font-family: 'Righteous', cursive; 
+    color: var(--darkGold);
+    text-shadow: var(--gold);
+    font-size: 32px;
+    transition: font-size 3s;
+    margin-top: -20px;
+}
+.welcome{
+    display: none;
+}
+.welText{
+    font-family: 'Righteous', cursive; 
+}
+.instructions{
+    display: none;
+}
+.changeColour{
+    font-size: 12px;
+    display: none;
+}
+/*------TITLE END-------*/
+/*------COLOURS-------*/
+.colours{
+    display: none;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+.blue{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #083368;
+}
+.blue:hover{
+    background-color: #9B7E56;
+}
+.monoChrome{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+    border-color: #000000;
+}
+.monoChrome:hover{
+    background-color: #FFFFFF;
+}
+.red{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #C61A09;
+}
+.red:hover{
+    background-color: #FFA590;
+}
+.green{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #82AC85;
+}
+.green:hover{
+    background-color: #D1ACA5;
+}
+/*------COLOURS END-------*/
+/*------KEYS-----*/
+.keyInfo{
+    display: none;
+    justify-content: space-between;
+}
+.label{
+    font-size: 24px;
+    color: var(--black);
+}
+.labelMid{
+    font-size: 44px;
+    color: var(--blue);
+}
+.key{
+    font-size: 48px;
+    color: var(--blue);
+    /* margin-top: 1px; */
+}
+.keyDiv{
+    border-radius: 37%;
+    background-color: var(--gold);
+    height: 250px;
+    width: 300px;
+}
+.keyCode{
+    font-size: 36px;
+    color: var(--black);
+}
+.keyCodeDiv{
+    border-radius: 37%;
+    background-color: var(--grey);
+    height: 180px;
+    width: 300px;
+}
+.charCodeDiv{
+    border-radius: 35%;
+    background-color: var(--grey);
+    height: 180px;
+    width: 300px;
+}
+.charCodeText{
+    font-size: 20px;
+    color: var(--black);
+}
+/*------FOOTER-------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    min-height: 100vh;
+}
+.github{
+    text-decoration: none;
+    color: var(--darkGold);
+}
+footer a:hover{
+    color: var(--black);
+}
