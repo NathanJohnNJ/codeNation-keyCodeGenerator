@@ -35,7 +35,7 @@ function start(){
     setTimeout(() => {changeColour.style.display = "flex"}, 5000);
 }
 
-document.addEventListener('keypress', (event) => {
+document.addEventListener('KeyboardEvent', (event) => {
     welcomeSection.style.display = "none";
     keyDiv.style.display = "flex";
     var name = event.key;
@@ -44,9 +44,9 @@ document.addEventListener('keypress', (event) => {
     console.log(`Key pressed ${name}.`);
     key.innerText = `${name}`;
     console.log(`The code for this key is ${code}.`);
-    keyCode.innerText =  `${code}.`;
+    keyCode.innerText =  `${code}`;
     console.log(`The charCode for this key is ${charCode}.`);
-    charCodeText.innerText = `The charCode for this key is ${charCode}.`;
+    charCodeText.innerText = `${charCode}`;
 });
 
 function setColour(col1, col2) {

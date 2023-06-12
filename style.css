@@ -35,11 +35,14 @@ body{
 }
 .welcome{
     display: none;
+    text-align: center;
 }
 .welText{
     font-family: 'Righteous', cursive; 
 }
 .instructions{
+    text-align: center;
+    text-justify: center;
     display: none;
 }
 .changeColour{
@@ -141,6 +144,9 @@ footer{
     flex-direction: column;
     margin-top: 20%;
     min-height: 100vh;
+}
+.footer p{
+    line-height: 1%;
 }
 .github{
     text-decoration: none;
