@@ -94,7 +94,7 @@ body{
     background-color: #D1ACA5;
 }
 /*------COLOURS END-------*/
-/*------KEYS-----*/
+/*------OUTPUT-----*/
 .keyInfo{
     display: none;
     justify-content: space-between;
@@ -103,12 +103,12 @@ body{
     font-size: 24px;
     color: var(--black);
     margin-bottom: 1px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 .labelMid{
     font-size: 38px;
     color: var(--blue);
-    margin-top: 1px;
+    margin-top: 5px;
     margin-bottom: 1px;
 }
 .key{
@@ -116,31 +116,35 @@ body{
     color: var(--blue);
     margin-top: 3px;
     font-family: 'Luckiest Guy', cursive; 
+    padding: 2%;
 }
 .keyDiv{
-    border-radius: 37%;
+    border-radius: 27%;
     background-color: var(--gold);
     height: 200px;
-    width: 300px;
+    margin: 7px;
 }
 .keyCode{
-    font-size: 36px;
+    font-size: 32px;
     color: var(--black);
     margin-top: 2px;
+    padding: 2%;
 }
 .keyCodeDiv{
     border-radius: 37%;
     background-color: var(--grey);
     height: 120px;
     width: 300px;
+    padding: 2%;
 }
-.charCodeDiv{
+.locationDiv{
     border-radius: 35%;
     background-color: var(--grey);
     height: 120px;
     width: 300px;
+    padding: 2%;
 }
-.charCodeText{
+.location{
     font-size: 20px;
     color: var(--black);
 }

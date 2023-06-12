@@ -14,8 +14,8 @@ const key = document.getElementById("key");
 const keyDiv = document.getElementById("keyInfo");
 const keyCode = document.getElementById("keyCode");
 const keyCodeDiv = document.getElementById("keyCodeDiv");
-const charCodeDiv = document.getElementById("charCodeDiv");
-const charCodeText = document.getElementById("charCode");
+const locationDiv = document.getElementById("locationDiv");
+const locationText = document.getElementById("location");
 
 //Opening animation and game setup
 document.addEventListener("DOMContentLoaded", () => {
@@ -35,21 +35,26 @@ function start(){
     setTimeout(() => {changeColour.style.display = "flex"}, 5000);
 }
 
-document.addEventListener('keypress', (event) => {
+document.addEventListener('keydown', (event) => {
     welcomeSection.style.display = "none";
     keyDiv.style.display = "flex";
     var name = event.key;
     var code = event.code;
-    var charCode = event.charCode;
+    var location = event.location;
     if(event.shiftKey == true){
-        
+        var shiftPressed = " + shift";
+        name = name + shiftPressed;
+        key.style.fontSize = "35px"
+        key.innerText = `${name}`;
+    } else {
+        name = name;
+        key.style.fontSize = "70px"
+        key.innerText = `${name}`;
     }
-    console.log(`Key pressed ${name}.`);
-    key.innerText = `${name}`;
     console.log(`The code for this key is ${code}.`);
     keyCode.innerText =  `${code}`;
-    console.log(`The charCode for this key is ${charCode}.`);
-    charCodeText.innerText = `${charCode}`;
+    console.log(`The location for this key is ${location}.`);
+    locationText.innerText = `${location}`;
 });
 
 function setColour(col1, col2) {
