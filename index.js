@@ -41,6 +41,9 @@ document.addEventListener('keypress', (event) => {
     var name = event.key;
     var code = event.code;
     var charCode = event.charCode;
+    if(event.shiftKey == true){
+        
+    }
     console.log(`Key pressed ${name}.`);
     key.innerText = `${name}`;
     console.log(`The code for this key is ${code}.`);
