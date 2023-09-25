@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function welcome(){
     colours.style.display = "flex";
-    welcomeSection.style.display = "block";
+    welcomeSection.style.display = "flex";
     setTimeout(() => {start()}, 1800);
 }
 function start(){
