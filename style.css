@@ -54,6 +54,9 @@ body{
 .welcome{
     display: none;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .welText{
     font-family: 'Righteous', cursive; 
